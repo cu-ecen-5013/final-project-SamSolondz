@@ -1,6 +1,7 @@
 # final-project-SamSolondz
 final-project-SamSolondz created by GitHub Classroom
-**This is repository owned by Sam Solondz (GitHub ID: SamSolondz)**
+
+*This is repository owned by Sam Solondz (GitHub ID: SamSolondz)*
 
 # ECEN 5013 Final Project Repository Overview
 Team Members: Dhruva Koley, Chutao Wei, Sam Solondz
