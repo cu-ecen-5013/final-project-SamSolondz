@@ -1,0 +1,28 @@
+#!/bin/sh
+#Script to load scull, faulty, and hello
+
+cd $(dirname $0)
+case "$1" in
+	stop)
+		#Unload modules	
+		echo -e "\nUnloading module spidev..."
+		rmmod spidev
+
+		echo -e "\nUnloading module spi_bcm2835..."
+		rmmod spi_bcm2835
+		;;
+
+	*)
+		#Load modules on startup
+		echo -e "\nLoading module spi_bcm2835..."
+		modprobe spi_bcm2835
+
+		echo -e "\nLoading module spidev..."
+		modprobe spidev
+
+		;;
+	
+esac
+
+echo -e "\n"
+exit 1
