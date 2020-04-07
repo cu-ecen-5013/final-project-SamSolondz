@@ -1,0 +1,35 @@
+#!/bin/sh
+#Script to load SPI drivers and fbtbt driver for 2.2" display
+
+cd $(dirname $0)
+case "$1" in
+	
+	start)
+		
+		#Load modules on startup
+		echo -e "\nLoading module spidev..."
+		modprobe spidev
+
+		echo -e "\nLoading module spi_bcm2835..."
+		modprobe spi_bcm2835
+
+		echo -e "\nLoading module fbtft_device..."
+		modprobe fbtbt_device name=adafruit22a debug=7
+		;;
+	stop)
+		#Unload modules	
+		echo -e "\nUnloading module spi_bcm2835..."
+		rmmod spi_bcm2835
+
+		echo -e "\nUnloading module spidev...."
+		rmmod spidev
+		;;
+
+	*)
+		echo "Usage: $0 {start|stop}"
+
+		;;
+	
+esac
+
+exit 1
