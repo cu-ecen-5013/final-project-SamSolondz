@@ -14,7 +14,7 @@ case "$1" in
 		modprobe spi_bcm2835
 
 		echo -e "\nLoading module fbtft_device..."
-		modprobe fbtbt_device name=adafruit22a debug=7
+#		modprobe fbtft_device name=adafruit22a fps=40 debug=7 rotate=270
 		;;
 	stop)
 		#Unload modules	
@@ -26,9 +26,20 @@ case "$1" in
 		;;
 
 	*)
-		echo "Usage: $0 {start|stop}"
+		echo -e "Running S99pitft..." > /etc/log.txt
+		
+		#Load modules on startup
+		echo -e "\nLoading module spidev..."
+		modprobe spidev
 
+		echo -e "\nLoading module spi_bcm2835..."
+		modprobe spi_bcm2835
+
+		echo -e "\nLoading module fbtft_device..."
+#		modprobe fbtft_device name=adafruit22a fps=40 debug=7 rotate=270
 		;;
+#echo "Usage: $0 {start|stop}"
+
 	
 esac
 

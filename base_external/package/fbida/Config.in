@@ -1,0 +1,5 @@
+
+config BR2_PACKAGE_FBIDA
+	bool "fbida"
+	help
+	  kraxel/fbida
