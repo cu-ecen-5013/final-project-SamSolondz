@@ -1,0 +1,5 @@
+
+config BR2_PACKAGE_SERVERSOCKET
+	bool "serversocket"
+	help
+	  Includes the serversocket executable and start-stop script
