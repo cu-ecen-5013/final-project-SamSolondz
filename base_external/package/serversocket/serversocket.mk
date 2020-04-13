@@ -11,12 +11,12 @@ SERVERSOCKET_SITE_METHOD = git
 SERVERSOCKET_LDFLAGS = $(LDFLAGS_FOR_BUILD) -pthread -lrt
 
 define SERVERSOCKET_BUILD_CMDS
-	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D) LDFLAGS="$(SERVERSOCKET_LDFLAGS)" serversocket
+	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D) LDFLAGS="$(SERVERSOCKET_LDFLAGS)" all
 endef
 
 define SERVERSOCKET_INSTALL_TARGET_CMDS
 	$(INSTALL) -m 0755 $(@D)/serversocket $(TARGET_DIR)/usr/bin
-	$(INSTALL) -m 0755 $(@D)/server/serversocket-start-stop.sh $(TARGET_DIR)/etc/init.d/S99serversocket
+	$(INSTALL) -m 0755 $(@D)/Sam/serversocket-start-stop.sh $(TARGET_DIR)/etc/init.d/S99serversocket
 endef
 
 
