@@ -17,3 +17,4 @@ Team Members: Dhruva Koley, Chutao Wei, Sam Solondz
 
 [Sam's Repository](https://github.com/cu-ecen-5013/final-project-SamSolondz)
 
+[Shared Application Code Repository](https://github.com/chwe3468/cu-ecen-5013-final-project-shared)
