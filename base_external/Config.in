@@ -1,2 +1,2 @@
-source "$BR2_EXTERNAL_project_base_PATH/package/serversocket/Config.in"
-
+source "$BR2_EXTERNAL_assignment_base_PATH/package/serversocket/Config.in"
+source "$BR2_EXTERNAL_assignment_base_PATH/package/fbwrite/Config.in"

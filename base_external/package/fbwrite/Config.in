@@ -1,0 +1,5 @@
+
+config BR2_PACKAGE_FBWRITE
+	bool "fbwrite"
+	help
+	  Includes the serversocket executable and start-stop script

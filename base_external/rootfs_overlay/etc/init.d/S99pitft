@@ -13,8 +13,6 @@ case "$1" in
 		echo -e "\nLoading module spi_bcm2835..."
 		modprobe spi_bcm2835
 
-		echo -e "\nLoading module fbtft_device..."
-#		modprobe fbtft_device name=adafruit22a fps=40 debug=7 rotate=270
 		;;
 	stop)
 		#Unload modules	
@@ -35,8 +33,7 @@ case "$1" in
 		echo -e "\nLoading module spi_bcm2835..."
 		modprobe spi_bcm2835
 
-		echo -e "\nLoading module fbtft_device..."
-#		modprobe fbtft_device name=adafruit22a fps=40 debug=7 rotate=270
+		
 		;;
 #echo "Usage: $0 {start|stop}"
 
