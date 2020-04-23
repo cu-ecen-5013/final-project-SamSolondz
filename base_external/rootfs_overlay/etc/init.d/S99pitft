@@ -13,6 +13,9 @@ case "$1" in
 		echo -e "\nLoading module spi_bcm2835..."
 		modprobe spi_bcm2835
 
+		gpio mode 0 in
+		gpio mode 0 up
+#	sh /etc/userview.sh
 		;;
 	stop)
 		#Unload modules	
@@ -33,7 +36,10 @@ case "$1" in
 		echo -e "\nLoading module spi_bcm2835..."
 		modprobe spi_bcm2835
 
-		
+		gpio mode 0 in
+		gpio mode 0 up
+#	sh /etc/userview.sh
+#		sh /etc/userview.sh
 		;;
 #echo "Usage: $0 {start|stop}"
 
