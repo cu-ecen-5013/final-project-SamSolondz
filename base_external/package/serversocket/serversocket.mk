@@ -5,7 +5,7 @@
 #
 ##############################################################
 
-SERVERSOCKET_VERSION = 'dd08247bba323442f55da14524e7fd918d8d5203'
+SERVERSOCKET_VERSION = '3573e9d511641c8d9e480a2fd813fc5f230dbd45'
 SERVERSOCKET_SITE = 'git@github.com:chwe3468/cu-ecen-5013-final-project-shared.git'
 SERVERSOCKET_SITE_METHOD = git
 SERVERSOCKET_LDFLAGS = $(LDFLAGS_FOR_BUILD) -pthread -lrt

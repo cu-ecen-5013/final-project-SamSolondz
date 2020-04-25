@@ -4,6 +4,9 @@ clear
 i=0
 prev=2
 
+temp=/var/tmp/logs/73.77.121.119
+img=/var/tmp/logs/71.205.27.171
+
 while [ $i -lt 1 ];
 do
 
@@ -13,10 +16,18 @@ do
 	fi
 	
 	if [ $button -eq 1 ]; then
-		tail -n 1 /var/tmp/logs/73.78.219.44;
+		if [ -f "$temp" ]; then
+			tail -n 1 /var/tmp/logs/73.77.121.119
+		else
+			echo "No temperature data"
+		fi
 	else
-		fbwrite /pics/yingyang.ppm
-        fi
+		if [ -f "$img" ]; then
+			fbwrite /var/tmp/logs/71.205.27.171
+        	else
+			echo "No image data"
+		fi
+	fi
 	sleep 1;
         
 	prev=$button
