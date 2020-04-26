@@ -5,7 +5,7 @@
 #
 ##############################################################
 
-FBWRITE_VERSION = '3573e9d511641c8d9e480a2fd813fc5f230dbd45'
+FBWRITE_VERSION = '9499b6f7ed4d0e966ba82f14815278fac9526d97'
 FBWRITE_SITE = 'git@github.com:chwe3468/cu-ecen-5013-final-project-shared.git'
 FBWRITE_SITE_METHOD = git
 FBWRITE_LDFLAGS = $(LDFLAGS_FOR_BUILD) -pthread -lrt

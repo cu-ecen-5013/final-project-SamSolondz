@@ -15,7 +15,7 @@ do
         	clear
 	fi
 	
-	if [ $button -eq 1 ]; then
+	if [ $button -eq 0 ]; then
 		if [ -f "$temp" ]; then
 			tail -n 1 /var/tmp/logs/73.77.121.119
 		else
